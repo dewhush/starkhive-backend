@@ -67,6 +67,8 @@ import { PeerReviewModule } from './peer-review/peer-review.module';
 import { KycVerificationModule } from './kyc-verification/kyc-verification.module';
 import { ReferralProgramModule } from './referral-program/referral-program.module';
 import { ReputationAppealModule } from './reputation-appeal/reputation-appeal.module';
+import { UserActivityModule } from './user-activity/user-activity.module';
+import { IdentityModule } from './identity/identity.module';
 import kycConfig from './config/kyc.config';
 
 
@@ -160,6 +162,8 @@ dotenv.config();
     KycVerificationModule,
     ReferralProgramModule,
     ReputationAppealModule,
+    UserActivityModule,
+    IdentityModule,
   ],
   providers: [RolesGuard, PermissionGuard, PermissionService],
 })
